@@ -1,17 +1,23 @@
-# uic-website
+# UiC
 
-A fresh, dependency-free static website for Unity in Christ at UC Berkeley.
+Unity In Christ is UC Berkeley’s Christian inter-fellowship group.
 
-## Local preview
+The purpose of UiC is to promote unity of Christians on campus, empower one
+another in prayer, service, and evangelism, and provide support for new students
+seeking churches and Christian fellowship. To accomplish these goals, UiC serves
+as a forum community where representatives of fellowships can share information,
+talents, and ideas to provide encouragement, offer and receive prayer, learn
+about and publicize each other’s events, prepare large-scale events, and work
+towards building greater unity and knowledge of the diversity of the body of
+Christ.
 
-Open `index.html` in a browser, or use any static-file server. No build step is required.
+You can find out more about us at the deployment of this website at
+[https://uic.berkeley.edu/](https://uic.berkeley.edu/).
 
-## Before publishing
+## Contact
+Feel free to contact hannahso@berkeley.edu with feedback about the website.
 
-- Confirm that every ministry description and external link is current.
-- Replace the contact email in the footer if needed.
-- Obtain OCF approval before using OCF hosting or an OCF-managed domain.
+## Copyright and License
+Copyright (c) 2023-2024 Hannah Oh
 
-## Deployment
-
-This repository is ready for GitHub Pages, OCF static hosting, or another static host. It deliberately contains no hosting credentials.
+Code released under the MIT License.
