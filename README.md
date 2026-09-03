@@ -1,4 +1,4 @@
-# Unity in Christ website
+# uic-website
 
 A fresh, dependency-free static website for Unity in Christ at UC Berkeley.
 
@@ -15,4 +15,3 @@ Open `index.html` in a browser, or use any static-file server. No build step is 
 ## Deployment
 
 This repository is ready for GitHub Pages, OCF static hosting, or another static host. It deliberately contains no hosting credentials.
-
