@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
 :root {
   --paper: #e9e7df;
   --ink: #11110f;
@@ -6,7 +8,7 @@
   --line: rgba(17, 17, 15, .24);
   --edge: clamp(1.15rem, 3.2vw, 3.4rem);
   --display: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  --sans: Arial, Helvetica, sans-serif;
+  --sans: "DM Sans", "Aptos", "Segoe UI", sans-serif;
 }
 
 * { box-sizing: border-box; }
