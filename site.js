@@ -1,3 +1,31 @@
+document.documentElement.classList.add('has-js');
+
+const intro = document.querySelector('[data-site-intro]');
+const introSkip = document.querySelector('[data-intro-skip]');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (intro) {
+  let introTimer;
+  const dismissIntro = () => {
+    window.clearTimeout(introTimer);
+    intro.classList.add('is-leaving');
+    document.body.classList.remove('has-intro');
+    window.setTimeout(() => intro.remove(), 900);
+  };
+
+  if (reducedMotion) {
+    intro.remove();
+  } else {
+    document.body.classList.add('has-intro');
+    window.requestAnimationFrame(() => intro.classList.add('is-active'));
+    introTimer = window.setTimeout(dismissIntro, 1800);
+    introSkip?.addEventListener('click', dismissIntro);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') dismissIntro();
+    }, { once: true });
+  }
+}
+
 const menuButton = document.querySelector('[data-menu-toggle]');
 const navLinks = document.querySelector('[data-nav-links]');
 
@@ -19,7 +47,6 @@ document.querySelectorAll('[data-year]').forEach((year) => {
   year.textContent = new Date().getFullYear();
 });
 
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const revealItems = document.querySelectorAll('.reveal');
 
 if (reducedMotion) {
