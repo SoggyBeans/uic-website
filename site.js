@@ -1,29 +1,15 @@
 document.documentElement.classList.add('has-js');
 
-const intro = document.querySelector('[data-site-intro]');
-const introSkip = document.querySelector('[data-intro-skip]');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-if (intro) {
-  let introTimer;
-  const dismissIntro = () => {
-    window.clearTimeout(introTimer);
-    intro.classList.add('is-leaving');
-    document.body.classList.remove('has-intro');
-    window.setTimeout(() => intro.remove(), 900);
-  };
-
-  if (reducedMotion) {
-    intro.remove();
-  } else {
-    document.body.classList.add('has-intro');
-    window.requestAnimationFrame(() => intro.classList.add('is-active'));
-    introTimer = window.setTimeout(dismissIntro, 1800);
-    introSkip?.addEventListener('click', dismissIntro);
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') dismissIntro();
-    }, { once: true });
-  }
+if (!reducedMotion && document.body.classList.contains('home')) {
+  document.documentElement.classList.add('intro-pending', 'intro-running');
+  window.requestAnimationFrame(() => {
+    window.requestAnimationFrame(() => {
+      document.documentElement.classList.remove('intro-pending');
+      window.setTimeout(() => document.documentElement.classList.remove('intro-running'), 1100);
+    });
+  });
 }
 
 const menuButton = document.querySelector('[data-menu-toggle]');
