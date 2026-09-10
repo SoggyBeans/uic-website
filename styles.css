@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@400;500;600&display=swap');
 
 :root {
   --paper: #e9e7df;
@@ -7,7 +7,7 @@
   --yellow: #f3d14e;
   --line: rgba(17, 17, 15, .24);
   --edge: clamp(1.15rem, 3.2vw, 3.4rem);
-  --display: var(--sans);
+  --display: "IBM Plex Sans Condensed", "Arial Narrow", sans-serif;
   --title: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   --sans: "DM Sans", "Aptos", "Segoe UI", sans-serif;
 }
@@ -62,7 +62,7 @@ html.intro-pending .home .hero-cutout { transform: translateX(-50%) scaleX(0); }
 .intro .section-label { color: var(--yellow); }
 .intro-copy { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(14rem, .5fr); gap: clamp(2rem, 7vw, 9rem); align-items: end; }
 .display-copy { max-width: 17ch; margin: 0; font: clamp(2.9rem, 6.3vw, 7.5rem)/.92 var(--display); letter-spacing: -.045em; text-transform: uppercase; }
-.intro .display-copy { font-family: var(--sans); font-weight: 400; }
+.intro .display-copy { font-weight: 400; }
 .display-copy em, .connect h2 em { color: var(--yellow); font-style: normal; }
 .intro-detail { max-width: 19rem; font-size: .95rem; line-height: 1.45; }
 .intro-detail p { margin-top: 0; }
