@@ -105,6 +105,8 @@ html.intro-pending .home .hero-cutout { transform: translateX(-50%) scaleX(0); }
 .site-footer { padding: 1.5rem var(--edge); background: var(--ink); color: var(--paper); }
 .footer-top { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: clamp(6rem, 13vw, 13rem); }
 .footer-top .wordmark { font-size: clamp(2.4rem, 5vw, 5rem); }
+.footer-top .wordmark--footer-logo { display: block; width: clamp(5rem, 10vw, 8rem); line-height: 0; }
+.footer-top .wordmark--footer-logo img { display: block; width: 100%; height: auto; }
 .footer-top p, .footer-bottom { margin: 0; font-size: .68rem; font-weight: 700; line-height: 1.4; letter-spacing: .04em; text-transform: uppercase; }
 .footer-bottom { display: grid; grid-template-columns: 1.3fr .7fr .5fr; gap: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,.38); }
 .footer-bottom p { margin: 0; }
