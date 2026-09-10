@@ -7,7 +7,7 @@
   --yellow: #f3d14e;
   --line: rgba(17, 17, 15, .24);
   --edge: clamp(1.15rem, 3.2vw, 3.4rem);
-  --display: var(--sans);
+  --display: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   --sans: "DM Sans", "Aptos", "Segoe UI", sans-serif;
 }
 
