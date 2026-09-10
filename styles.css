@@ -3,11 +3,11 @@
 :root {
   --paper: #e9e7df;
   --ink: #11110f;
-  --blue: #2038a8;
+  --blue: #475674;
   --yellow: #f3d14e;
   --line: rgba(17, 17, 15, .24);
   --edge: clamp(1.15rem, 3.2vw, 3.4rem);
-  --display: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --display: var(--sans);
   --sans: "DM Sans", "Aptos", "Segoe UI", sans-serif;
 }
 
@@ -50,7 +50,7 @@ html.intro-pending .home .hero-cutout { transform: translateX(-50%) scaleX(0); }
 .hero-word--top { transform: translateX(-.06em); }
 .hero-word--bottom { transform: translateX(.02em); text-align: right; }
 .hero-cutout { position: absolute; z-index: 0; top: 29%; left: 50%; width: clamp(8rem, 19vw, 21rem); height: clamp(4.6rem, 9.6vw, 10rem); margin: 0; overflow: hidden; transform: translateX(-50%); background: var(--blue); }
-.hero-cutout::after { position: absolute; inset: 0; content: ""; background: rgba(32, 56, 168, .23); mix-blend-mode: multiply; }
+.hero-cutout::after { position: absolute; inset: 0; content: ""; background: rgba(71, 86, 116, .23); mix-blend-mode: multiply; }
 .hero-cutout img { width: 100%; height: 100%; object-fit: cover; object-position: center 38%; filter: grayscale(1) contrast(1.2); animation: breathe 7s ease-in-out infinite; }
 .hero-caption { position: absolute; z-index: 2; right: var(--edge); bottom: 7.4rem; width: 12rem; margin: 0; font-size: .7rem; line-height: 1.35; text-align: right; }
 @keyframes breathe { 50% { transform: scale(1.07); } }
