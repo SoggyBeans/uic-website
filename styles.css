@@ -7,7 +7,8 @@
   --yellow: #f3d14e;
   --line: rgba(17, 17, 15, .24);
   --edge: clamp(1.15rem, 3.2vw, 3.4rem);
-  --display: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --display: var(--sans);
+  --title: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   --sans: "DM Sans", "Aptos", "Segoe UI", sans-serif;
 }
 
@@ -46,7 +47,7 @@ html.intro-pending .home .hero-cutout { transform: translateX(-50%) scaleX(0); }
 .hero-meta--right { right: var(--edge); text-align: right; }
 .hero-meta a { text-underline-offset: .25em; }
 .hero-display { position: absolute; top: 50%; left: 50%; z-index: 1; width: calc(100% - (var(--edge) * 2)); transform: translate(-50%, -48%); }
-.hero-word { position: relative; z-index: 1; color: var(--ink); font-family: var(--display); font-size: clamp(5rem, 17.8vw, 19rem); font-stretch: condensed; line-height: .73; letter-spacing: -.075em; white-space: nowrap; }
+.hero-word { position: relative; z-index: 1; color: var(--ink); font-family: var(--title); font-size: clamp(5rem, 17.8vw, 19rem); font-stretch: condensed; line-height: .73; letter-spacing: -.075em; white-space: nowrap; }
 .hero-word--top { transform: translateX(-.06em); }
 .hero-word--bottom { transform: translateX(.02em); text-align: right; }
 .hero-cutout { position: absolute; z-index: 0; top: 29%; left: 50%; width: clamp(8rem, 19vw, 21rem); height: clamp(4.6rem, 9.6vw, 10rem); margin: 0; overflow: hidden; transform: translateX(-50%); background: var(--blue); }
@@ -112,7 +113,7 @@ html.intro-pending .home .hero-cutout { transform: translateX(-50%) scaleX(0); }
 .inner-page .site-header { position: relative; }
 .page-hero { padding: clamp(6rem, 14vw, 14rem) var(--edge) clamp(3rem, 6vw, 6rem); border-bottom: 1px solid var(--ink); }
 .page-hero__kicker { margin: 0 0 1.8rem; font-size: .66rem; font-weight: 700; letter-spacing: .08em; }
-.page-hero h1 { max-width: 13ch; margin: 0; font: clamp(4rem, 12.2vw, 14rem)/.76 var(--display); letter-spacing: -.065em; text-transform: uppercase; }
+.page-hero h1 { max-width: 13ch; margin: 0; font: clamp(4rem, 12.2vw, 14rem)/.76 var(--title); letter-spacing: -.065em; text-transform: uppercase; }
 .page-hero__intro { max-width: 29rem; margin: 3.3rem 0 0 auto; font-size: 1rem; line-height: 1.45; }
 .directory-section { padding: clamp(4rem, 9vw, 9rem) var(--edge); background: var(--blue); color: var(--paper); }
 .directory-note { max-width: 28rem; margin: 0 0 3rem auto; font-size: .78rem; line-height: 1.45; }
