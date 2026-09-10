@@ -24,13 +24,15 @@ img { display: block; max-width: 100%; }
 .skip-link:focus { transform: translateY(0); }
 
 .site-header { position: absolute; z-index: 7; top: 0; left: 0; width: 100%; color: var(--ink); }
-.site-nav { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; min-height: 5.2rem; padding: 0 var(--edge); border-bottom: 1px solid var(--line); }
+.site-nav { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; min-height: 5.2rem; padding: 0 var(--edge); background: var(--blue); color: #fff; border-bottom: 1px solid rgba(255,255,255,.35); }
 .wordmark { font: 1.55rem/.8 var(--display); letter-spacing: -.06em; text-decoration: none; }
 .wordmark span { display: inline-block; margin: -.15rem 0 0 .09rem; font: 400 .45rem/1 var(--sans); vertical-align: top; letter-spacing: 0; }
+.site-nav .wordmark--logo { display: block; width: clamp(3rem, 5vw, 3.8rem); line-height: 0; }
+.site-nav .wordmark--logo img { display: block; width: 100%; height: auto; }
 .nav-links { display: flex; justify-content: flex-end; gap: clamp(1rem, 2.3vw, 2.6rem); }
 .nav-links a, .menu-toggle { font: 700 .68rem/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
 .nav-links a { position: relative; padding: .25rem 0; }
-.nav-links a::after { position: absolute; right: 0; bottom: 0; left: 0; height: 1px; content: ""; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform .25s ease; }
+.nav-links a::after { position: absolute; right: 0; bottom: 0; left: 0; height: 1px; content: ""; background: #fff; transform: scaleX(0); transform-origin: right; transition: transform .25s ease; }
 .nav-links a:hover::after, .nav-links [aria-current="page"]::after { transform: scaleX(1); transform-origin: left; }
 .menu-toggle { display: none; grid-column: 3; justify-self: end; padding: .5rem 0; border: 0; background: none; color: inherit; cursor: pointer; }
 
@@ -47,7 +49,7 @@ html.intro-pending .home .hero-cutout { transform: translateX(-50%) scaleX(0); }
 .hero-meta--right { right: var(--edge); text-align: right; }
 .hero-meta a { text-underline-offset: .25em; }
 .hero-display { position: absolute; top: 50%; left: 50%; z-index: 1; width: calc(100% - (var(--edge) * 2)); transform: translate(-50%, -48%); }
-.hero-word { position: relative; z-index: 1; color: var(--ink); font-family: var(--title); font-size: clamp(5rem, 17.8vw, 19rem); font-stretch: condensed; line-height: .73; letter-spacing: -.075em; white-space: nowrap; }
+.hero-word { position: relative; z-index: 1; color: var(--ink); font-family: var(--title); font-size: clamp(4.6rem, 16vw, 17rem); font-stretch: condensed; line-height: .73; letter-spacing: -.075em; white-space: nowrap; }
 .hero-word--top { transform: translateX(-.06em); }
 .hero-word--bottom { transform: translateX(.02em); text-align: right; }
 .hero-cutout { position: absolute; z-index: 0; top: 29%; left: 50%; width: clamp(8rem, 19vw, 21rem); height: clamp(4.6rem, 9.6vw, 10rem); margin: 0; overflow: hidden; transform: translateX(-50%); background: var(--blue); }
@@ -132,13 +134,13 @@ html.intro-pending .home .hero-cutout { transform: translateX(-50%) scaleX(0); }
 @media (max-width: 720px) {
   .site-nav { grid-template-columns: 1fr auto; min-height: 4.4rem; }
   .menu-toggle { display: block; }
-  .nav-links { position: absolute; top: 100%; right: 0; left: 0; display: grid; gap: 0; background: var(--paper); border-bottom: 1px solid var(--ink); clip-path: inset(0 0 100% 0); transition: clip-path .35s ease; }
+  .nav-links { position: absolute; top: 100%; right: 0; left: 0; display: grid; gap: 0; background: var(--blue); border-bottom: 1px solid rgba(255,255,255,.35); clip-path: inset(0 0 100% 0); transition: clip-path .35s ease; }
   .nav-links.is-open { clip-path: inset(0); }
-  .nav-links a { padding: 1rem var(--edge); border-top: 1px solid var(--line); }
+  .nav-links a { padding: 1rem var(--edge); border-top: 1px solid rgba(255,255,255,.22); }
   .nav-links a::after { display: none; }
   .hero { min-height: 38rem; }
   .hero-display { top: 46%; width: calc(100% - (var(--edge) * 2)); }
-  .hero-word { font-size: clamp(4rem, 20vw, 9rem); line-height: .77; }
+  .hero-word { font-size: clamp(3.7rem, 18vw, 8rem); line-height: .77; }
   .hero-cutout { top: 32%; width: 8rem; height: 3.9rem; }
   .hero-caption { right: var(--edge); bottom: 6.3rem; }
   .hero-meta { bottom: 1.5rem; }
