@@ -138,6 +138,14 @@ html.intro-pending .home .hero-cutout { transform: scaleX(0); }
 .directory-card p { max-width: 34rem; margin: 0; font-size: .84rem; line-height: 1.42; }
 .directory-card__link { justify-self: end; font-size: 1.4rem; text-decoration: none; }
 .directory-card__link:hover { color: var(--yellow); }
+.directory-archive { margin-top: clamp(5rem, 10vw, 10rem); }
+.directory-archive__heading { display: flex; justify-content: space-between; gap: 2rem; align-items: end; margin-bottom: 2rem; }
+.directory-archive__label { margin: 0; color: var(--yellow); font-size: .66rem; font-weight: 700; letter-spacing: .08em; }
+.directory-archive h2 { max-width: 12ch; margin: 0; font: clamp(2.4rem, 5vw, 5.5rem)/.84 var(--display); letter-spacing: -.05em; text-transform: uppercase; }
+.directory--archive { opacity: .66; }
+.directory--archive .directory-card h3 { margin: 0; font: clamp(1.7rem, 3.5vw, 4.4rem)/.85 var(--display); letter-spacing: -.045em; text-transform: uppercase; }
+.directory--archive .directory-card h3 a { text-decoration: none; }
+.directory--archive .directory-card:hover { color: var(--paper); }
 .directory-cta { display: flex; justify-content: space-between; gap: 2rem; align-items: end; padding-top: clamp(5rem, 10vw, 10rem); }.directory-cta p { max-width: 27rem; margin: 0; font: clamp(2rem, 4vw, 4.5rem)/.9 var(--display); letter-spacing: -.04em; text-transform: uppercase; }
 .faith-layout { padding: clamp(5rem, 10vw, 10rem) var(--edge); background: var(--paper); }.faith-purpose { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(2rem, 9vw, 12rem); margin-bottom: clamp(5rem, 10vw, 11rem); }.faith-purpose__lead { margin: 0; font: clamp(2.7rem, 6vw, 7rem)/.9 var(--display); letter-spacing: -.05em; text-transform: uppercase; }.faith-purpose__copy { max-width: 29rem; font-size: 1rem; line-height: 1.5; }.faith-quote { padding: clamp(4rem, 9vw, 9rem) var(--edge); background: var(--yellow); }.faith-quote blockquote { max-width: 21ch; margin: 0; font: clamp(2.7rem, 6vw, 7rem)/.9 var(--display); letter-spacing: -.05em; text-transform: uppercase; }.faith-quote cite { display: block; margin-top: 2rem; font: 700 .68rem/1.2 var(--sans); letter-spacing: .08em; }.beliefs-section { padding: clamp(5rem, 11vw, 12rem) var(--edge); background: var(--ink); color: var(--paper); }.beliefs-heading { display: grid; grid-template-columns: .6fr 1.4fr; gap: 2rem; margin-bottom: 4rem; }.beliefs-heading h2 { max-width: 12ch; margin: 0; font: clamp(2.7rem, 5vw, 6rem)/.88 var(--display); letter-spacing: -.05em; text-transform: uppercase; }.beliefs-heading p { max-width: 22rem; margin: 0; font-size: .85rem; line-height: 1.45; }.beliefs { margin: 0; padding: 0; list-style: none; border-top: 1px solid rgba(255,255,255,.55); counter-reset: belief; }.beliefs li { display: grid; grid-template-columns: 4rem 1fr; gap: 1rem; padding: 1.35rem 0; border-bottom: 1px solid rgba(255,255,255,.55); font: 400 clamp(1.05rem, 1.8vw, 1.65rem)/1.32 var(--sans); letter-spacing: -.012em; text-transform: none; counter-increment: belief; }.beliefs li::before { padding-top: .2rem; content: "0" counter(belief); color: var(--yellow); font: 700 .68rem/1 var(--sans); letter-spacing: .08em; }
 
@@ -175,6 +183,7 @@ html.intro-pending .home .hero-cutout { transform: scaleX(0); }
   .directory-card { grid-template-columns: 2rem 1fr 1.2rem; gap: .7rem; }
   .directory-card p { grid-column: 2; grid-row: 2; }
   .directory-card__link { grid-column: 3; grid-row: 1; }
+  .directory-archive__heading { display: grid; gap: 1rem; }
   .directory-cta { display: grid; }
   .faith-purpose, .beliefs-heading { grid-template-columns: 1fr; }
   .faith-purpose { gap: 2rem; }
