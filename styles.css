@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&display=swap');
 
 :root {
   --paper: #e9e7df;
@@ -7,7 +7,7 @@
   --yellow: #f3d14e;
   --line: rgba(17, 17, 15, .24);
   --edge: clamp(1.15rem, 3.2vw, 3.4rem);
-  --display: "IBM Plex Sans Condensed", "Arial Narrow", sans-serif;
+  --display: "Archivo Narrow", "Arial Narrow", sans-serif;
   --title: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   --sans: "DM Sans", "Aptos", "Segoe UI", sans-serif;
 }
