@@ -41,18 +41,18 @@ html.has-js .home .hero-word { transition: transform 1s cubic-bezier(.22, 1, .36
 html.has-js .home .hero-cutout { transition: transform .65s cubic-bezier(.65, 0, .35, 1) .42s; }
 html.intro-pending .home .hero-word--top { transform: translateX(-115vw); }
 html.intro-pending .home .hero-word--bottom { transform: translateX(115vw); }
-html.intro-pending .home .hero-cutout { transform: translateX(-50%) scaleX(0); }
+html.intro-pending .home .hero-cutout { transform: scaleX(0); }
 
 .hero { position: relative; min-height: max(42rem, 100svh); padding: 7rem var(--edge) 2rem; background: var(--paper); isolation: isolate; }
 .hero-meta { position: absolute; bottom: 2rem; z-index: 2; font-size: .64rem; font-weight: 700; line-height: 1.4; letter-spacing: .08em; }
 .hero-meta--left { left: var(--edge); }
 .hero-meta--right { right: var(--edge); text-align: right; }
 .hero-meta a { text-underline-offset: .25em; }
-.hero-display { position: absolute; top: 50%; left: 50%; z-index: 1; width: calc(100% - (var(--edge) * 2)); transform: translate(-50%, -48%); }
+.hero-display { --hero-cutout-width: clamp(8rem, 19vw, 21rem); --hero-cutout-height: clamp(4.6rem, 9.6vw, 10rem); position: absolute; top: 50%; left: 50%; z-index: 1; display: grid; grid-template-rows: auto var(--hero-cutout-height) auto; align-items: center; width: calc(100% - (var(--edge) * 2)); transform: translate(-50%, -48%); }
 .hero-word { position: relative; z-index: 1; color: var(--ink); font-family: var(--title); font-size: clamp(4.6rem, 16vw, 17rem); font-stretch: condensed; line-height: .73; letter-spacing: -.075em; white-space: nowrap; }
 .hero-word--top { transform: translateX(-.06em); }
 .hero-word--bottom { transform: translateX(.02em); text-align: right; }
-.hero-cutout { position: absolute; z-index: 0; top: 29%; left: 50%; width: clamp(8rem, 19vw, 21rem); height: clamp(4.6rem, 9.6vw, 10rem); margin: 0; overflow: hidden; transform: translateX(-50%); background: var(--blue); }
+.hero-cutout { z-index: 0; grid-row: 2; align-self: center; justify-self: center; width: var(--hero-cutout-width); height: var(--hero-cutout-height); margin: 0; overflow: hidden; transform: scaleX(1); transform-origin: center; background: var(--blue); }
 .hero-cutout::after { position: absolute; inset: 0; content: ""; background: rgba(71, 86, 116, .23); mix-blend-mode: multiply; }
 .hero-cutout img { width: 100%; height: 100%; object-fit: cover; object-position: center 38%; filter: grayscale(1) contrast(1.2); animation: breathe 7s ease-in-out infinite; }
 .hero-caption { position: absolute; z-index: 2; right: var(--edge); bottom: 7.4rem; width: 12rem; margin: 0; font-size: .7rem; line-height: 1.35; text-align: right; }
@@ -149,9 +149,8 @@ html.intro-pending .home .hero-cutout { transform: translateX(-50%) scaleX(0); }
   .nav-links a { padding: 1rem var(--edge); border-top: 1px solid rgba(255,255,255,.22); }
   .nav-links a::after { display: none; }
   .hero { min-height: 38rem; }
-  .hero-display { top: 46%; width: calc(100% - (var(--edge) * 2)); }
+  .hero-display { --hero-cutout-width: 8rem; --hero-cutout-height: 3.9rem; top: 46%; width: calc(100% - (var(--edge) * 2)); }
   .hero-word { font-size: clamp(3.7rem, 18vw, 8rem); line-height: .77; }
-  .hero-cutout { top: 32%; width: 8rem; height: 3.9rem; }
   .hero-caption { right: var(--edge); bottom: 6.3rem; }
   .hero-meta { bottom: 1.5rem; }
   .hero-meta--right { display: none; }
