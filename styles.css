@@ -129,7 +129,7 @@ html.intro-pending .home .hero-cutout { transform: scaleX(0); }
 .page-hero__intro { max-width: 29rem; margin: 3.3rem 0 0 auto; font-size: 1rem; line-height: 1.45; }
 .directory-section { padding: clamp(4rem, 9vw, 9rem) var(--edge); background: var(--blue); color: var(--paper); }
 .directory { border-top: 1px solid rgba(255,255,255,.65); }
-.directory-card { display: grid; grid-template-columns: 3.5rem minmax(12rem, .65fr) minmax(14rem, 1fr) 1.2rem; gap: 1.2rem; align-items: start; padding: 1.3rem 0 1.5rem; border-bottom: 1px solid rgba(255,255,255,.65); transition: padding .25s ease, color .25s ease; }
+.directory-card { display: grid; grid-template-columns: 3.5rem minmax(15rem, .85fr) minmax(12rem, 1fr) 1.2rem; gap: 1.2rem; align-items: start; padding: 1.3rem 0 1.5rem; border-bottom: 1px solid rgba(255,255,255,.65); transition: padding .25s ease, color .25s ease; }
 .directory-card:hover { padding-right: .8rem; padding-left: .8rem; color: var(--yellow); }
 .directory-number { padding-top: .25rem; font-size: .65rem; font-weight: 700; }
 .directory-card h2 { margin: 0; font: clamp(1.7rem, 3.5vw, 4.4rem)/.85 var(--display); letter-spacing: -.045em; text-transform: uppercase; }
