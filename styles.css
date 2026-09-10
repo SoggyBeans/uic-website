@@ -128,7 +128,6 @@ html.intro-pending .home .hero-cutout { transform: scaleX(0); }
 .page-hero h1 { max-width: 13ch; margin: 0; font: clamp(4rem, 12.2vw, 14rem)/.76 var(--title); letter-spacing: -.065em; text-transform: uppercase; }
 .page-hero__intro { max-width: 29rem; margin: 3.3rem 0 0 auto; font-size: 1rem; line-height: 1.45; }
 .directory-section { padding: clamp(4rem, 9vw, 9rem) var(--edge); background: var(--blue); color: var(--paper); }
-.directory-note { max-width: 28rem; margin: 0 0 3rem auto; font-size: .78rem; line-height: 1.45; }
 .directory { border-top: 1px solid rgba(255,255,255,.65); }
 .directory-card { display: grid; grid-template-columns: 3.5rem minmax(12rem, .65fr) minmax(14rem, 1fr) 1.2rem; gap: 1.2rem; align-items: start; padding: 1.3rem 0 1.5rem; border-bottom: 1px solid rgba(255,255,255,.65); transition: padding .25s ease, color .25s ease; }
 .directory-card:hover { padding-right: .8rem; padding-left: .8rem; color: var(--yellow); }
@@ -139,9 +138,8 @@ html.intro-pending .home .hero-cutout { transform: scaleX(0); }
 .directory-card__link { justify-self: end; font-size: 1.4rem; text-decoration: none; }
 .directory-card__link:hover { color: var(--yellow); }
 .directory-archive { margin-top: clamp(5rem, 10vw, 10rem); }
-.directory-archive__heading { display: flex; justify-content: space-between; gap: 2rem; align-items: end; margin-bottom: 2rem; }
+.directory-archive__heading { margin-bottom: 2rem; }
 .directory-archive__label { margin: 0; color: var(--yellow); font-size: .66rem; font-weight: 700; letter-spacing: .08em; }
-.directory-archive h2 { max-width: 12ch; margin: 0; font: clamp(2.4rem, 5vw, 5.5rem)/.84 var(--display); letter-spacing: -.05em; text-transform: uppercase; }
 .directory--archive { opacity: .66; }
 .directory--archive .directory-card h3 { margin: 0; font: clamp(1.7rem, 3.5vw, 4.4rem)/.85 var(--display); letter-spacing: -.045em; text-transform: uppercase; }
 .directory--archive .directory-card h3 a { text-decoration: none; }
@@ -179,11 +177,9 @@ html.intro-pending .home .hero-cutout { transform: scaleX(0); }
   .footer-bottom a { text-align: left; }
   .page-hero h1 { max-width: 10ch; font-size: clamp(4.2rem, 18vw, 8rem); }
   .page-hero__intro { margin-left: 0; }
-  .directory-note { margin-left: 0; }
   .directory-card { grid-template-columns: 2rem 1fr 1.2rem; gap: .7rem; }
   .directory-card p { grid-column: 2; grid-row: 2; }
   .directory-card__link { grid-column: 3; grid-row: 1; }
-  .directory-archive__heading { display: grid; gap: 1rem; }
   .directory-cta { display: grid; }
   .faith-purpose, .beliefs-heading { grid-template-columns: 1fr; }
   .faith-purpose { gap: 2rem; }
